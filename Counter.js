@@ -8,8 +8,8 @@ const Counter = () => {
 
     return (
         <View>
-            <Text>You clicked me {count} times</Text>
             <Button onPress={() => {setCount(count + 1)}} title={"Click Me"} />
+            <Text>You clicked me {count} times</Text>
         </View>
     );
 
