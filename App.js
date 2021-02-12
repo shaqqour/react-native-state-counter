@@ -7,8 +7,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text>Open up App.js to start working on your app!</Text>
-      <Greeting name = "Sarah" />
-      <TextInput style={{ height:25, width: 180, borderColor: 'grey', borderWidth: 1 }} placeholder="Enter your name..."/>
+      <Greeting />
       <StatusBar style="auto" />
     </View>
   );

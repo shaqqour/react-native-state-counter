@@ -1,10 +1,15 @@
-import React from 'react';
-import { Text, View } from 'react-native';
+import React, { useState } from 'react';
+import { Text, TextInput, View } from 'react-native';
 
-const Greeting = (props) => {
+const Greeting = () => {
+    const [name, setName] = useState("Sarah");
+
     return  (
         <View>
-            <Text>Hello {props.name}!</Text>
+            <TextInput placeholder="Enter your name..." 
+                       onChangeText={text => setName(text)}
+            />
+            <Text>Hello {name}!</Text>
         </View>
     );
 }
